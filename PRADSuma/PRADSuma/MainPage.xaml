@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PRADSuma.MainPage"
+             BackgroundImageSource="bg1.jpg">
+    <ScrollView>
+    <StackLayout BackgroundColor="Beige" Padding="5,5,5,5" Margin="15">
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Suma de 2 numeros" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Image Source="LogoU.png" WidthRequest="100" HeightRequest="170"/>
+        <Label Text="Alumno: Daniel Emilio Martinez Estevez" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="#Cuenta: 120450173" FontSize="Title" Padding="30,10,30,10"/>
+            <Label Text="********************************************" FontSize="Medium"/>
+            <Entry Keyboard="Numeric" x:Name="Numero1" Placeholder="Ingrese el Primer Numero"/>
+            <Entry Keyboard="Numeric" x:Name="Numero2" Placeholder="Ingerese el Segundo Numero"/>
+        
+            <Button Text="Sumar" x:Name="BtnSuma" BackgroundColor="Gray" Clicked="BtnSuma_Clicked"/>
+            <Button Text="Restar" x:Name="BtnResta" BackgroundColor="Gray" Clicked="BtnResta_Clicked"/>
+            <Button Text="Multiplicar" x:Name="BtnMultiplica" BackgroundColor="Gray" Clicked="BtnMultiplica_Clicked"/>
+            <Button Text="Dividir" x:Name="BtneDivide" BackgroundColor="Gray" Clicked="BtneDivide_Clicked"/>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
